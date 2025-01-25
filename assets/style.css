@@ -1,0 +1,164 @@
+.st-key-contact-button button {
+  width: 140px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(
+    to right,
+    #77530a,
+    #ffd277,
+    #77530a,
+    #77530a,
+    #ffd277,
+    #77530a
+  );
+  background-size: 250%;
+  background-position: left;
+  color: #ffd277;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition-duration: 1s;
+  overflow: hidden;
+}
+
+.st-key-contact-button button::before {
+  position: absolute;
+  content: "Stay in Touch";
+  color: #ffd277;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 97%;
+  height: 90%;
+  border-radius: 8px;
+  transition-duration: 1s;
+  background-color: rgba(0, 0, 0);
+  background-size: 200%;
+}
+
+.st-key-contact-button button:hover {
+  background-position: right;
+  transition-duration: 1s;
+}
+
+.st-key-contact-button button:hover::before {
+  background-position: right;
+  transition-duration: 1s;
+}
+
+.st-key-contact-button button:active {
+  transform: scale(0.95);
+}
+
+/* Styling the stay-in-touch class */
+.stay-in-touch {
+  text-align: center;
+}
+
+/* Styling the social media buttons */
+
+[kind="secondary"] {
+  padding: 15px 30px;
+  border: 2px solid #2c2c2c;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: all 0.4s ease;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+  font-weight: bold;
+}
+
+[kind="secondary"]::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.25) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  transform: scale(0);
+  transition: transform 0.5s ease;
+}
+
+[kind="secondary"]:hover::after {
+  transform: scale(4);
+}
+
+[kind="secondary"]:hover {
+  border-color: #666666;
+  background: #292929;
+}
+
+/* Styling the project link buttons */
+.st-key-projectlink button {
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.7em 2em;
+  border: 3px solid #ffffff;
+  border-radius: 2px;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+
+.st-key-projectlink button:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: #ffffff;
+  z-index: -1;
+}
+
+.st-key-projectlink button:hover,
+.st-key-projectlink button:focus {
+  color: rgb(0, 0, 0);
+}
+
+.st-key-projectlink button:hover:before,
+.st-key-projectlink button:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.st-key-projectlink button:active {
+  transform: scale(0.9);
+}
+
+/* Styling descriptions */
+.earzz-description {
+  color: #FBCEB1;
+}
+.cms-descritpion {
+  color: #FBCEB1;
+}
+.mhm-descritpion{
+  color: #FBCEB1;
+}
+.sfs-description{
+  color: #FBCEB1;
+}
