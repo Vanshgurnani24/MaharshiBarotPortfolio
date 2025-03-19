@@ -37,7 +37,7 @@ class AboutMe:
     #Hard Skills
     st.subheader(":green[Hard Skills :material/computer:]",divider='green',anchor=False)
     st.write("""
-      - Programming Skills: C, C++, HTML, CSS, JavaScript
+      - Programming Skills: C, C++, HTML, CSS, JavaScript,Java,Python
       - Frameworks: Bootstrap
       - Databases: MySQL, MongoDB
       - Networkig Skills: OSINT, nmap-scanning, wireshark, aircrack, JohnTheRipper, netcat, pen-testing. 
